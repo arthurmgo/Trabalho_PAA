@@ -57,7 +57,7 @@ int count1(char* s1, char* s2){
 
 int main()
 {
-
+    /*
     int resp;
     int teste;
     char s1[100];
@@ -104,6 +104,9 @@ int main()
 
 
     }while(resp != 0);
+    */
+    printf("\nA distancia de ediçao por Força Bruta: %d",count2("arthur","artur",0,0));
+    printf("\nA distancia de ediçao por Programaçao Dinamica: %d\n",count1("arthur","artur"));
 
     return 0;
 }
