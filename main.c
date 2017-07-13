@@ -41,7 +41,7 @@ int count1(char* s1, char* s2){
     }
 
 
-    for ( i = 1; i < m; i++) {
+    for ( i = 1; i < m; i++){
         for (j = 1; j < n; j++) {
             if (s1[i-1] == s2[j-1]) {
                 v[i][j] = min(min(v[i][j-1],v[i-1][j]),v[i-1][j-1]);
@@ -55,56 +55,7 @@ int count1(char* s1, char* s2){
 
 }
 
-int main()
-{
-    /*
-    int resp;
-    int teste;
-    char s1[100];
-    char s2[100];
-
-    do{
-        printf("\n1 - Programaçao Dinamica: ");
-        printf("\n2 - Bruta Força: ");
-        printf("\n3 - Sair\n\n");
-        teste = scanf("%d", &resp);
-
-
-        switch(resp){
-        case 1:
-            system("clear");
-
-            printf("\nDigite a primeira string(100): ");
-            fflush(stdin);
-            fgets(s1,100,stdin);
-
-            printf("\nDigite a primeira string(100): ");
-            fflush(stdin);
-            fgets(s2,100,stdin);
-
-            printf("A distancia de ediçao entre %s e %s é: %d",s1,s2,count1(s1,s2));
-            break;
-        case 2:
-            system("clear");
-
-            printf("\nDigite a primeira string(100): ");
-            fflush(stdin);
-            fgets(s1,100,stdin);
-
-            printf("\nDigite a primeira string(100): ");
-            fflush(stdin);
-            fgets(s2,100,stdin);
-
-            printf("A distancia de ediçao entre %s e %s é: %d",s1,s2,count2(s1,s2,0,0));
-            break;
-        default:
-            break;
-        }
-        system("clear");
-
-
-    }while(resp != 0);
-    */
+int main(){
     printf("\nA distancia de ediçao por Força Bruta: %d",count2("arthur","artur",0,0));
     printf("\nA distancia de ediçao por Programaçao Dinamica: %d\n",count1("arthur","artur"));
 
